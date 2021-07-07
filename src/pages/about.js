@@ -1,12 +1,16 @@
-import React from "react"
-import Header from "../components/header"
+// Step 1: Import your component
+import * as React from 'react'
 
-export default function About() {
+// Step 2: Define your component
+const AboutPage = () => {
   return (
-    <div style={{ color: `teal` }}>
-      <Header headerText="About Gatsby" />
-      <Header headerText="It's pretty cool" />
-      <p>Such wow. Very React.</p>
-    </div>
+    <main>
+      <title>About Me</title>
+      <h1>About Me</h1>
+      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+    </main>
   )
 }
+
+// Step 3: Export your component
+export default AboutPage
