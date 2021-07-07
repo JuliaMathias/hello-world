@@ -1,14 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
+// Step 1: Import React
+import * as React from 'react'
 
-export default function Home() {
+// Step 2: Define your component
+const IndexPage = () => {
   return (
-    <div style={{ color: `purple` }}>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Hello Gatsby!" />
-      <p>What a world.</p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    <main>
+      <title>Home Page</title>
+      <h1>Welcome to my Gatsby site!</h1>
+      <p>I'm making this by following the Gatsby Tutorial.</p>
+    </main>
   )
 }
+
+// Step 3: Export your component
+export default IndexPage
